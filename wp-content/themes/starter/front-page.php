@@ -13,6 +13,12 @@
 
 <main id="primary" class="site-main">
 
+<div>
+    <p>Placeholder</p>
+    <img src="" alt="">
+    <p>Placeholder</p>
+</div>
+
 <?php
 while ( have_posts() ) :
     the_post();

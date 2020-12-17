@@ -23,6 +23,9 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
+	<div class = "header-call">
+		Call 555-555-5555
+	</div>
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'starter' ); ?></a>
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
@@ -37,7 +40,7 @@
 				<h1 class="site-title"><a style = "color:white;text-decoration:none;" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
 			endif;
-			$starter_description = get_bloginfo( 'description', 'display' );
+			// $starter_description = get_bloginfo( 'description', 'display' );
 			if ( $starter_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $starter_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
@@ -54,5 +57,5 @@
 				)
 			);
 			?>
-		</nav>#site-navigation
+		</nav>
 	</header><!-- #masthead -->
