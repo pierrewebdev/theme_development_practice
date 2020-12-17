@@ -67,7 +67,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
  *{
-	margin:0 0 0 4px;
 	box-sizing: border-box;
  }
 html {
@@ -1045,5 +1044,5 @@ h1.site-title{
 	position: relative;
 	z-index:10;
 	color:white;
-	font-size:20px;
+	font-size:40px;
 }
