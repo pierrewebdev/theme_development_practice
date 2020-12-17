@@ -178,3 +178,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+
+//enqueue font awesome cdn link into project
+
+function register_styles(){
+	wp_enqueue_style("starter_fontawesome", "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", array());
+}
+
+add_action("wp_enqueue_scripts", "register_styles"); 
+

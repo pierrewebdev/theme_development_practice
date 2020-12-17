@@ -24,7 +24,8 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<div class = "header-call">
-		Call 555-555-5555
+	<br/>
+	<div class = "header-div"><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i> <span> Call 555-555-5555 </span></div>
 	</div>
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'starter' ); ?></a>
 	<header id="masthead" class="site-header">
