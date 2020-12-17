@@ -13,10 +13,8 @@
 
 <main id="primary" class="site-main">
 
-<div>
-    <p>Placeholder</p>
-    <img src="" alt="">
-    <p>Placeholder</p>
+<div class = "front-page-img">
+    <p>Use a Template Part Here</p>
 </div>
 
 <?php
