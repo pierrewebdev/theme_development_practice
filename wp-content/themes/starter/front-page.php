@@ -14,10 +14,12 @@
 <main id="primary" class="site-main">
 
 <div class = "front-page-img">
-    <p>Use a Template Part Here</p>
+    <?php 
+        get_template_part("./template-parts/content", "cta");
+    ?>
 </div>
 
-<?php
+<?php 
 while ( have_posts() ) :
     the_post();
     the_content();
