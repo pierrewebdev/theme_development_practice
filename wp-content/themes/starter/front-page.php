@@ -2,13 +2,6 @@
   get_header();
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Theme</title>
-</head>
 <body>
 
 <main id="primary" class="site-main">
@@ -28,10 +21,12 @@ while ( have_posts() ) :
 endwhile; // End of the loop.
 ?>
 
-</main><!-- #main -->
+<div class = "banner">
+  <h4>Ready to build with us ?</h4>
+   <button> Let's Build <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+</div>
 
-</body>
-</html>
+</main><!-- #main -->
 
 <?php
 get_footer();
