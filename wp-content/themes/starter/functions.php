@@ -184,6 +184,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 function register_styles(){
 	wp_enqueue_style("starter_fontawesome", "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", array());
+	wp_register_style("starter_custom", get_template_directory_uri() . "/custom.css");
+
+	wp_enqueue_style('starter_custom');
 }
 
 add_action("wp_enqueue_scripts", "register_styles"); 

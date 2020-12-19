@@ -1,0 +1,21 @@
+
+
+.front-page-content{
+    margin: 0 100px;
+}
+
+.front-page-content > h2{
+    font-size:30px;
+}
+
+footer{
+    height:100px;
+    display:flex;
+    align-items: flex-end;
+    margin: 0 0 0 3%;
+}
+
+.footer-content{
+    display:flex;
+    justify-content: space-around;
+}

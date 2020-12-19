@@ -21,9 +21,10 @@
 
 <?php 
 while ( have_posts() ) :
+  echo "<div class = \"front-page-content\">";
     the_post();
     the_content();
-
+  echo "</div>";
 endwhile; // End of the loop.
 ?>
 
