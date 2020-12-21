@@ -191,3 +191,11 @@ function register_styles(){
 
 add_action("wp_enqueue_scripts", "register_styles"); 
 
+function register_scripts(){
+	wp_enqueue_script("starter_accordion_js",get_template_directory_uri() . "/custom.js");
+	// wp_enqueue_script('starter_accordion_js');
+}
+
+add_action("wp_enqueue_scripts", "register_scripts");
+
+
