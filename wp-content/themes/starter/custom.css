@@ -1,3 +1,34 @@
+/*==========CSS for Header in header.php including naviagaton links for primary menu=================================*/
+.site-header{
+	background:rgba(39, 43, 44, 0.87);
+	color:white;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height:20vh;
+	
+}
+
+.site-header > h1{
+	color:white;
+}
+
+.header-call{
+	background-color: #333333;
+	color:white;
+}
+
+h1.site-title{
+	margin-top:0px;
+}
+
+.nav-menu > li{
+	margin:0px 20px;
+}
+
+.nav-menu > li > a{
+	color:white;
+}
 
 .main-navigation ul {
 	float:right;
@@ -11,20 +42,58 @@
 	font-size: 20px;
 }
 
+/*==========CSS for Overlay image on home page=================================*/
+
+.front-page-img{
+	background-image: url("http://192.168.64.2/practice_theme/wp-content/uploads/2020/12/home-page-img.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height:75vh;
+	position: relative;
+	display:flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*adding an image overlay over the front page image*/
+.front-page-img::after{
+	content:"";
+	display:block;
+	width:100%;
+	height:100%;
+	background-color: #093145;
+	top:0;
+	left:0;
+	z-index: 0;
+	position: absolute;
+	opacity: 0.5;
+}
+
+.front-page-img > *{
+	position: relative;
+	color:white;
+	max-width:700px;
+	font-size:25px;
+	z-index:10;
+}
+
+.img-h2{
+	font-size:35px;
+}
+
 
 .front-page-content{
-    margin: 0 100px;
+    margin: 0 50px;
 }
 
-.front-page-content > h2{
-    font-size:30px;
-}
 
 .post, .page {
     margin:0;
 }
 
-/*css for accordion buttons*/
+/*==========CSS for Accordion buttons used in faq page=================================*/
 
 container {
     width: 50%;
@@ -74,8 +143,51 @@ container {
   
 
 /*css for banner at bottom of home page*/
-  
 
+/*==========CSS for Services we offer div on home page=================================*/
+.wp-block-group__inner-container > h3{
+  font-size: 20px;
+  text-align: center;
+}
+
+.services-parent > div{
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.services-div{
+    border: 1px solid gainsboro;
+    margin:10px;
+    padding: 10px;
+    max-height:360px;
+    transition: border-color 0.5s ease-in-out;
+}
+
+.services-div:hover{
+    border: 1px solid black;
+}
+
+h3.service-one::before{
+    content: "\f121";
+    font-family: "fontawesome";
+    margin:2px;
+}
+
+h3.service-two::before{
+    content: "\f201";
+    font-family: "fontawesome";
+    margin:2px;
+}
+
+h3.service-three::before{
+    content: "\f2d5";
+    font-family: "fontawesome";
+    margin:2px;
+}
+
+
+/*==========CSS for Banner on home page=================================*/
 .banner{
 	background-position: center;
 	background-repeat: no-repeat;
@@ -150,7 +262,7 @@ container {
     100%{background-position:0% 94%}
 }
 
-
+/*==========CSS for Footer in footer.php=================================*/
 footer{
     height:40px;
     display:flex;
@@ -168,4 +280,88 @@ h3.footer-h3{
     display:flex;
     justify-content: space-around;
     background-color: rgb(245, 245, 245);
+}
+
+
+/*==========CSS for Contact Page=================================*/
+
+.contact-page{
+  display:flex;
+  justify-content: center;
+}
+
+.contact-page > *{
+    margin : 50px 0;
+    max-width:75%;
+}
+
+div.wpcf7 {
+    background-color: #0054ff;
+    border: 1px solid #6993e6;
+    padding:20px;
+    width: 500px;
+    color:white;
+    border-radius: 28px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .wpcf7 input[type=”text”],
+    .wpcf7 input[type=”email”],
+    .wpcf7 input[type=”submit”],
+    .wpcf7 input[type=”button”] {
+    background-color:#725f4c;
+    width:100%;
+    text-align:center;
+    text-transform:uppercase;
+    }
+
+    .wpcf7 input[type=”button”] {
+       background-color: dodgerblue;
+    }
+
+/*==========CSS for About Page=================================*/
+
+div.about-header{
+    background-image: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+div.about-header::after{
+    content:"";
+    background-color:black;
+    display:block;
+    opacity: 0.1;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 0;
+}
+
+div.about-header > h1{
+    margin:0;
+    color:white;
+    z-index: 1;
+}
+
+div.about-content{
+    margin: 0 100px;
+}
+
+div.about-content > h2{
+    font-size:30px;
+}
+
+div.faq-page{
+    margin:100px auto;
+    width:50%;
 }
