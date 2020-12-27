@@ -21,6 +21,12 @@ while ( have_posts() ) :
 endwhile; // End of the loop.
 ?>
 
+<div class = "portfolio">
+    <?php 
+        get_template_part("./template-parts/content", "portfolio");
+    ?>
+</div>
+
 <div class = "banner">
   <h4>Ready to build with us ?</h4>
    <button> Let's Build <i class="fa fa-arrow-right" aria-hidden="true"></i></button>

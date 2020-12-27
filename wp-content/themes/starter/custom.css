@@ -145,6 +145,13 @@ container {
 /*css for banner at bottom of home page*/
 
 /*==========CSS for Services we offer div on home page=================================*/
+
+.services-h2{
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
+
 .wp-block-group__inner-container > h3{
   font-size: 20px;
   text-align: center;
@@ -364,4 +371,26 @@ div.about-content > h2{
 div.faq-page{
     margin:100px auto;
     width:50%;
+}
+
+
+/*==========CSS for Portfolio Projects=================================*/
+.portfolio{
+    margin:60px 0px;
+}
+
+.portfolio > h2{
+    font-size:35px;
+    text-align: center;
+}
+
+.portfolio-parent > div > img {
+    width:auto;
+    height: 420px;
+}
+
+.portfolio-parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

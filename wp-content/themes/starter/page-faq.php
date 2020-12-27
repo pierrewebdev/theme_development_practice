@@ -22,8 +22,3 @@ endwhile; // End of the loop.
 <?php
 get_footer();
 ?>
-
-h1.entry-title.main_title{
-  font-size: 40px;
-  font-family: Georgia;
-}
