@@ -1,6 +1,6 @@
 /*==========CSS for Header in header.php including naviagaton links for primary menu=================================*/
 .site-header{
-	background:rgba(39, 43, 44, 0.87);
+	background: #333333;;
 	color:white;
 	display:flex;
 	justify-content: space-around;
@@ -14,7 +14,7 @@
 }
 
 .header-call{
-	background-color: #333333;
+	background-color:rgba(39, 43, 44, 0.87);
 	color:white;
 }
 
@@ -275,8 +275,15 @@ footer{
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(245, 245, 245);
+    color:white;
+    background: #333333;
     border-top:solid 0.5px gainsboro;
+}
+
+.footer-link{
+    color:white !important;
+    text-decoration: none;
+    margin: 0 1px;
 }
 
 h3.footer-h3{
@@ -292,40 +299,40 @@ h3.footer-h3{
 
 /*==========CSS for Contact Page=================================*/
 
-.contact-page{
-  display:flex;
-  justify-content: center;
-}
 
-.contact-page > *{
-    margin : 50px 0;
-    max-width:75%;
-}
-
-div.wpcf7 {
-    background-color: #0054ff;
-    border: 1px solid #6993e6;
-    padding:20px;
-    width: 500px;
-    color:white;
-    border-radius: 28px;
+[role = "form"]{
     display:flex;
     flex-direction: column;
     align-items: center;
-    }
-    .wpcf7 input[type=”text”],
-    .wpcf7 input[type=”email”],
-    .wpcf7 input[type=”submit”],
-    .wpcf7 input[type=”button”] {
-    background-color:#725f4c;
-    width:100%;
-    text-align:center;
-    text-transform:uppercase;
-    }
+    justify-content: flex-start;
+    margin: 100px 0;
+}
 
-    .wpcf7 input[type=”button”] {
-       background-color: dodgerblue;
-    }
+[role = "form"] .form-title{
+    font-size: 35px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+[role = "form"] p{
+    margin:10px;
+    font-size: 20px;
+}
+
+[role = "form"] span.your-name input, span.your-email input, span.your-phone-number input{
+    margin: 10px 0;
+    width: 100%;
+    height:50px;
+    padding: 0 15px;
+}
+
+[role = "form"] [type = "submit"]{
+    background-color: #333333;
+    color:white;
+    border-radius: 10px;
+    padding:15px 50px;
+    margin: 5px 0 0 25%;
+}
 
 /*==========CSS for About Page=================================*/
 

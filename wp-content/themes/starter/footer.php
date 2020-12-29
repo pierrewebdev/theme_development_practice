@@ -26,7 +26,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a style = "color:black; text-decoration:none;" href="<?php echo esc_url( __( "https://github.com/pierrewebdev" ) ); ?>">
+			<a class = "footer-link" href="<?php echo esc_url( __( "https://github.com/pierrewebdev" ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				  echo "Pierre Web Development Copyright 2020";
